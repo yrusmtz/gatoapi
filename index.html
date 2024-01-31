@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css">
+    <title>Fotos de Gatos Bonitos</title>
+</head>
+<body>
+    <div id="navbar">
+        <button onclick="toggleTheme()">
+            <span id="theme-icon">🌞</span> Cambiar Tema
+        </button>
+    </div>
+
+    <div id="cat-container">
+        <h1 id="title">Fotos de Gatos Bonitos</h1>
+        <p id="description">Disfruta de estas adorables fotos de gatos. Haz clic en "Nuevo Gato" para ver más.
+            
+            <br><br>
+            Esta página utiliza la API de <a href="https://thecatapi.com/">TheCatAPI</a> para obtener las fotos de gatos. Usando el API fetch de JavaScript, se obtiene una foto aleatoria de gato cada vez que se hace clic en el botón "Nuevo Gato".
+            
+            <br><br>
+
+            <span id="credits">Fotos de <a href="https://thecatapi.com/">TheCatAPI</a></span>
+        </p>
+        <img id="cat-image" src="" alt="Gato bonito">
+        <button id="new-cat-btn" onclick="getRandomCat()">Nuevo Gato</button>
+    </div>
+    <script src="assets/script.js"></script>
+</body>
+</html>
